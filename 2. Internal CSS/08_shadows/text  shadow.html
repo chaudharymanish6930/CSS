@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatiner{
+            background-color: aquamarine;
+            border: black solid 2px;
+            margin:10px;
+            padding:5px;
+            width:800px;
+            height:700px;
+            display:flex;
+            flex-direction:row;
+            justify-content: center;
+           align-items: center;
+
+        }
+        .box{
+            --primary-color:brown;
+            --custom-width:600px;
+            background-color: yellow;
+            border: double 2px var(--primary-color);
+            width: var(--custom-width); 
+            height:350px;
+            margin:3px;
+            padding:5px;  
+            }
+        .head2{
+           /* text-shadow: 12px 13px 14px black;*/
+          /* text-shadow: green 13px 15px 19px;*/
+          /*text-shadow: green 13px 14px; no blur*/
+          /* text-shadow: 17px 19px; */
+          text-shadow: 18px 19px 18px green, 16px 18px 18px red, 17px 13px 16px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="box">
+        <img src="bhagat singh.jpeg" alt="bharat mata ki jai">
+        <h2 class="head2">veer bhagat singh </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum debitis quae, fugit, veniam eaque magnam tempore aliquam 
+           uga velit tempora nostrum voluptas molestias maxime quam earum corporis eos neque accusamus! Quam quos quis ex dicta!
+        </p>
+        </div>
+    </div>
+</body>
+</html>

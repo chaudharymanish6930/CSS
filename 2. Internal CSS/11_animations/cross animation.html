@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blueviolet;
+            border: green double 5px;
+            border-radius: 10px;
+            width:1500px;
+            height:800px;
+            margin: 25px;
+            padding: 20px;
+
+
+        }
+        .box1{
+                background-color: blanchedalmond;
+                border: blue solid 1px;
+                border-radius: 6px;
+                width: 200px;
+                height: 50px;
+                margin:15px;
+                padding: 8px;
+                position:relative;
+               animation: 5s linear 1s infinite alternate none running leftmovement; 
+            }
+            @keyframes leftmovement{
+                from
+                {
+                    top:0px;
+                    left:1450px;
+                }
+
+
+                to{
+                    top:690px;
+                    left:0;
+                }
+            }
+            .box2{
+                background-color: blanchedalmond;
+                border: blue solid 1px;
+                border-radius: 6px;
+                width: 200px;
+                height: 50px;
+                margin:15px;
+                padding: 8px;
+                position:relative;
+               animation: 5s linear 1s infinite alternate none running rightmovement; 
+            }
+            @keyframes rightmovement{
+                from
+                {
+                    top:0px;
+                    left:0px;
+                }
+
+
+                to{
+                    top:690px;
+                    left:1450px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">india</div>
+        <div class="box2"> PAKISTAN</div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive file</title>
+    <STYLE>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100%;
+            height:100%;
+        }
+        .container{
+            width:100%;
+            height:100%;
+            padding:2rem;
+            display:grid;
+            gap:1rem;
+            background-color: rgb(24, 108, 108);
+          /*  grid-template-columns:repeat(3,1fr);  */
+           grid-template-columns: repeat(auto-fit, Minmax(200px,600px));
+           justify-content: center;
+        }
+
+        .item{
+            border: black solid 2px;
+            background-color: rgb(73, 47, 97);
+           color:white;
+          padding:1rem;
+        
+        }
+    </STYLE>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+        <div class="item">P</div>
+        <div class="item">Q</div>
+        <div class="item">R</div>
+    </div>
+</body>
+</html>

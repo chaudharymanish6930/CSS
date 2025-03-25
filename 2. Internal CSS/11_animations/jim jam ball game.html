@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alternate animations</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            border: black solid 2px;
+            border-radius:5px;
+            width:1700px;
+            height:800px;
+            margin:30px;
+            padding:25px;
+        }
+        .box1{
+            background-color: blanchedalmond;
+            border:blue solid 1px;
+            border-radius:6px;
+            width:300px;
+            height: 50px;
+            margin: 15px;
+            padding:8px;
+            position:relative;
+            /* short hand notation*/
+            animation: 5s linear 1s infinite alternate none running rightmovement ;
+            }
+            @keyframes rightmovement {
+                from{
+                    top:0;
+                    left:0;
+                }
+                to{
+                    top:0;
+                    left:1380px;
+                }
+
+            }
+            .box2{
+                background-color: blanchedalmond;
+                border: blue solid 1px;
+                border-radius: 6px;
+                width: 300px;
+                height: 50px;
+                margin:15px;
+                padding: 8px;
+                position:relative;
+               animation: 5s linear 1s infinite alternate none running leftmovement; 
+            }
+            @keyframes leftmovement{
+                from
+                {
+                    top:620px;
+                    left:1380px;
+                }
+
+                to{
+                    top:620px;
+                    left:0;
+                }
+            }
+            .circle{
+                background-color: blanchedalmond;
+                border: blue solid 1px;
+                border-radius: 50px;
+                width: 100px;
+                height: 100px;
+                top:160px;
+                left:500px;
+                position:relative;
+                animation: 10s ease-in-out  0s infinite alternate-reverse none running circlemovement;   
+            
+            }
+            @keyframes circlemovement{
+                0%{
+                   top:0%;
+                   left:5%;
+                }
+                30%{
+                    top:5%;
+                    left:90%;
+
+                }
+                60%{
+                    top:90%;
+                    left:10%;
+
+                }
+                100%{
+                    top:95%;
+                    left:90%;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">    HINDUSTAN </div>
+        <div class="box2">    PAKISTAN  </div>
+        <div class="circle">     </div>
+    </div>
+</body>
+</html>

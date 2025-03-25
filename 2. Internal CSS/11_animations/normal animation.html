@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation ka bhandar</title>
+    <style>
+         *{
+            margin:12px;
+            padding:10px;
+            box-sizing: border-box;
+         }
+        .container{
+            background-color: cadetblue;
+            width:1500px;
+            height:1100px;
+            border: black solid 2px;
+            margin: 5px;
+        }
+        .box{
+            width:350px;
+            height:90px;
+            background-color: aquamarine;
+            border-radius: 25px;
+            border: solid blue 1px;
+            margin:12px;
+            position: relative;
+            animation-name: rightMovement ;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            animation-delay: 2s;
+            animation-timing-function:cubic-bezier(0.1,0.7,0.1,0.1);
+        }
+        @keyframes rightMovement {
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left:1100px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+
+    </div>
+</body>
+</html>

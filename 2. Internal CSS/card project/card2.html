@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second card</title>
+    <style>
+        *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+        .container{
+            width:100vw;
+            height:100vh;
+            background-color: violet;
+         background-image: linear-gradient(135deg, #BBC6EC 0%, #9599E2 100%);
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .card{
+            width:500px;
+            height:700px;
+            background-color: white;
+            border-radius: 20px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+        }
+
+        .card img{
+            width:500px;
+            height: 250px;
+            border-top-left-radius:20px;
+            border-top-right-radius: 20px;
+        }
+        .textbox h2{
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 50px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 90px;
+        } 
+        .textbox p{
+            margin:20px;
+            font-size: large;
+            align-items: center;
+
+        }
+        #amountbox{
+            width:80%;
+            height:10%;
+            background-color:teal;
+            border: black solid 1px;
+            border-radius: 15px;
+          /*  box-shadow: 2px 10px 5px ;*/
+          display:flex;
+          justify-content: space-between;
+        }
+        
+        
+        #paymentbutton{
+            width:80%;
+            height:8%;
+            background-color: rgb(222, 222, 63);
+            margin-top: 40px;
+            box-shadow: 10PX 15PX 80PX BLACK;
+        }
+
+
+
+        .cancelbox {
+            margin-top: 20px;
+            color: blue;
+            font-weight: 200;
+            font-size: 26px;
+             
+        }
+        
+
+        #leftbox{
+            height:100%; 
+          justify-content: start;
+          align-items: center;
+          flex-direction: row;
+        }
+        .rightbox a{
+            justify-content: end;
+            align-items: end;
+            font-size: 30px;
+            margin-right: 30px;
+            margin-top: 40px;
+        }
+        .image img{
+            width:40px;
+            height:30px;
+            border-radius: 50px;
+            margin-top: 19px;
+            margin-left: 24px;
+            border:solid black 1px;
+        }
+        .textamount {
+              width:80px;
+            height:20px;
+            font-style: normal;
+            font-size: 29px;
+            margin-left: 90px;
+            margin-bottom: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+     <img src="book stall.jpg"/>
+
+     <div class="textbox">
+     <h2> BOOK STALL</h2>
+     <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, facere vero! Ipsam nulla 
+        distinctio blanditiis nam! Sunt quos ducimus tempora fuga dignissimos dolorum, vel veritatis?
+     </p>
+     </div>
+ 
+     <div id="amountbox" >
+       <div id="leftbox">
+        <div class="image">
+        <img src="music symbol.jpeg" alt="hgh">
+        </div>
+        <div class="textamount">
+          <p>Amount $99.99/year</p>  
+        </div>
+          </div>
+
+       <div class="rightbox">
+        <a href="#">change</a>
+       </div>
+
+
+     </div>
+
+
+     <button id="paymentbutton">
+        proceed to payment
+     </button>
+     <div class="cancelbox">
+        <a href="cancel order">order cancel</a>
+     </div>
+       
+    </div>
+
+
+    </div>
+</body>
+</html>

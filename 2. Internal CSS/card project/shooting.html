@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooting Stars Animation</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black;
+    }
+
+    .shooting-star {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px white;
+      animation: shoot 5s linear infinite;
+    }
+
+    @keyframes shoot {
+      0% {
+        transform: translateX(-200px) translateY(-200px) scale(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+        transform: translateX(200px) translateY(200px) scale(1);
+      }
+      100% {
+        transform: translateX(800px) translateY(800px) scale(0);
+        opacity: 0;
+      }
+    }
+
+    /* Adding multiple stars */
+    .star-1 {
+      top: 100px;
+      left: 50px;
+      animation-duration: 3s;
+    }
+
+    .star-2 {
+      top: 200px;
+      left: 200px;
+      animation-duration: 4s;
+    }
+
+    .star-3 {
+      top: 50px;
+      left: 300px;
+      animation-duration: 6s;
+    }
+
+    .star-4 {
+      top: 400px;
+      left: 150px;
+      animation-duration: 7s;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="shooting-star star-1"></div>
+  <div class="shooting-star star-2"></div>
+  <div class="shooting-star star-3"></div>
+  <div class="shooting-star star-4"></div>
+
+</body>
+</html>

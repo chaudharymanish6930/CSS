@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alternate animations</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            border: black solid 2px;
+            border-radius:5px;
+            width:1700px;
+            height:800px;
+            margin: 30px;
+            padding:25px;
+        }
+        .box{
+            background-color: blanchedalmond;
+            border:blue solid 1px;
+            border-radius:6px;
+            width:200px;
+            height: 90px;
+            margin: 15px;
+            padding:8px;
+            position:relative;
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;  /* important */
+            animation-timing-function:  linear;
+            /* play-state*/
+            animation-play-state: paused;
+            }
+            @keyframes rightmovement {
+                from{
+                    top:0;
+                    left:0;
+                }
+                to{
+                    top:0;
+                    left:1000px;
+                }
+
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">    HINDUSTAN </div>
+    </div>
+</body>
+</html>

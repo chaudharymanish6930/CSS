@@ -1,0 +1,29 @@
+.box{
+    width:400px;
+    height:300px;
+    background-color: aqua;
+    border: black solid 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+    margin:auto;
+ 
+    transition: all 4s linear 1s ;
+}
+
+.container{
+    background-color:darkslategrey;
+    border:yellow solid 5px;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+   
+    transform: scale(0.5);
+}

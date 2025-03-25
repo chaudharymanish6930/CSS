@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height:120vh;
+}
+
+.container{
+    height:100%;
+    width:100%;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,200px);
+    padding:4rem;
+    gap:3rem;
+    border:2px solid white ;
+   /* justify-items: end;*/
+    /*start end center
+    horizontal work in line*/
+    /*align-items: center;*/
+    place-items: center;
+}
+
+.item{
+    height:80px;
+    width:200px;
+
+    background-color: cornflowerblue;
+    border:5px solid green;
+    /*justify-self: start end stretch;*/
+  /*  align-self: stretch;*/
+    /*place-self: stretch;*/
+}

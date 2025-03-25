@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    text-align: center;
+    background-color: yellowgreen;
+    padding:2rem;
+}
+.header_container{
+    max-width:2500px;
+    height:300px;
+    background-color: #fff;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;   
+}
+.logo-image{
+    width: 400px;
+    height:90px;
+    margin-top:7rem;
+    margin-left: 2rem;
+  /*  padding:20px;*/
+}
+.logo-text{
+    font-size:9rem;
+   width:50px;
+   height:80px;
+   margin-top: 3rem;
+}
+
+.nav{
+    margin-top: 9rem;;
+    font-size: 3rem;
+    color:black;
+}
+.nav-link{
+    color:rgb(31, 27, 27);
+}
+.nav-link:hover{
+    color:blue;
+}
+
+.contact_no{
+    text-align: center;
+    color:white;
+    font-size: 5rem;
+    border-radius: 25px;
+    background-color: blue;
+    margin:70px 80px;
+    padding:50px 30px;
+}
